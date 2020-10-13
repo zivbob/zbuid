@@ -7,10 +7,16 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 支付宝支付自动配置
+ *
+ * @author ziv
+ * @date 2020-10-13
+ */
 @Configuration
 @EnableConfigurationProperties(PayProperties.class)
 @ConditionalOnClass(value = HelloService.class)
-public class PayAutoConfiguration {
+public class AliPayAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean
