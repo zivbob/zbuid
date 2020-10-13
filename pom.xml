@@ -22,7 +22,17 @@
 
     <modules>
         <module>zbuild-ali-pay-spring-boot-starter</module>
+        <module>demo</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
