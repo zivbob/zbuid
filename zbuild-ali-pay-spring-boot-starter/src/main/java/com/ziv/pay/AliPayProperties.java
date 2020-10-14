@@ -2,13 +2,14 @@ package com.ziv.pay;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
+/**
+ * 支付宝支付参数配置类
+ *
+ * @author ziv
+ * @date 2020-10-13
+ */
 @ConfigurationProperties(prefix = "pay.ali")
-public class PayProperties {
-
-    /**
-     * 是否开启支付功能
-     */
-    private boolean enable = false;
+public class AliPayProperties {
 
     /**
      * 应用ID
@@ -54,14 +55,6 @@ public class PayProperties {
      * 支付宝网关
      */
     private String gatewayUrl;
-
-    public boolean isEnable() {
-        return enable;
-    }
-
-    public void setEnable(boolean enable) {
-        this.enable = enable;
-    }
 
     public String getAppId() {
         return appId;
